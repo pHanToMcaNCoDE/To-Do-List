@@ -1,0 +1,190 @@
+/* Google Fonts Import Links */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+
+
+:root{
+
+    /* Colors */
+    --white: #fff;
+    --form: #ffffff;
+    --black: #000;
+    --ash: #e5e5e5;
+    --purple: purple;
+    --list: #fff;
+    --green: rgb(104, 218, 104);
+    --crim: crimson;
+
+    /* Fonts */
+    --ktp: 'Kdam Thmor Pro';
+    --roboto: 'Roboto';
+    --creep: 'Creepster';
+    --ps2p: 'Press Start 2P';
+    --ss: 'Silkscreen';
+
+    /* Exceptions */
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.max-width{
+    max-width: 1330px;
+    padding: 0 30px;
+    margin: 0;
+}
+
+/* Naviagtion Stylong */
+nav{
+    border-bottom: 2px solid var(--black);
+    width: 100%;
+    height: 70px;
+    padding: 15px 0;
+    background-color: var(--white);
+}
+nav .max-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    font-family: var(--ss);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--purple);
+}
+nav .heading{
+    font-family: var(--ktp);
+    font-weight: 500;
+    font-size: 30px;
+    margin-left: -95px;
+    color: var(--black);
+}
+
+#icon{
+    width: 20px;
+    cursor: pointer;
+}
+
+/* Light/Dark Mode Styling */
+.alternate{
+    --white: #353535;
+    --black: #ffffff;
+    --ash: #000000;
+    --list: #fff;
+    --form: #000000;
+}
+
+
+
+/* Hero Section Styling */
+.body{
+    background-color: var(--white);
+    width: 100%; 
+    height: 100vh;
+    padding-top: 2%;
+    margin: 0% 0 0 50%;
+    transform: translate(-50%);
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.body h2{
+    font-family: var(--ktp);
+    font-weight: 500;
+    font-size: 55px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+/* .hero p{
+    padding-top: 8px;
+    font-family: var(--roboto);
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 1px;
+} */
+.body .createList{
+    text-decoration: none;
+    background: none;
+    border: 2px solid var(--purple);
+    padding: 10px 20px;
+    font-family: var(--ktp);
+    font-weight: 500;
+    margin: 0 0 0 -1%;
+    font-size: 18px;
+    color: var(--purple);
+    cursor: pointer;
+
+}
+
+/* To-Do List Styling */
+.tdlist{
+    /* display: block; */
+    border: 2px solid var(--purple);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10% 0 0 15%;
+    width: 75%;
+    padding: 10px;
+    text-align: left;
+    background-color: var(--list);
+}
+.tdlist .serial h6{
+    font-size: 17px;
+    font-family: var(--ktp);
+    color: var(--purple);
+}
+.tdlist .para1 p{
+    font-size: 18px;
+    font-family: var(--ss);
+}
+.tdlist .para2 p{
+    font-size: 15px;
+    font-family: var(--roboto);
+}
+.tdlist .icons abbr i{
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.tdlist .icons abbr .fa-binoculars{
+    color: var(--green);
+}
+.tdlist .icons abbr .fa-pen-nib{
+    color: var(--purple);
+}
+.tdlist .icons abbr .fa-trash{
+    color: var(--crim);
+}
+
+
+
+
+
+/* .form .fa-xmark{
+    /* display: block; 
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    /* color: var(--blcak); 
+    font-size: 25px;
+    cursor: pointer;
+} */
+/* .form.active{
+    top: 0%;
+} */
